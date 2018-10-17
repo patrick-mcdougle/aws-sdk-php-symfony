@@ -6,3 +6,6 @@ services:
         class: "%aws_sdk.class%"
         arguments:
             - ~
+    Aws\Symfony\DependencyInjection\EnvVarProcessor:
+        autowire: true
+        autoconfigure: true
